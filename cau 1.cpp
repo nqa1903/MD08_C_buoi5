@@ -8,6 +8,9 @@ int main(){
 	printf("nhap a b c :");
 	scanf("%d %d %d",&a ,&b ,&c);
 	float dental = b*b - 4*a*c;
+	if(a == 0 && b == 0 && c == 0){
+		printf("phuong trinh vo so nghiem");
+	}
 	if(dental < 0){
 		printf("phuong trinh vo nghiem");
 	}else if(dental ==0){
